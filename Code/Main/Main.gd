@@ -14,6 +14,8 @@ func _ready() -> void:
 func spawn_bubble():
 	var new_bubble:Bubble = BUBBLE.instantiate()
 	new_bubble.main = self
+	new_bubble.scale.x = randf_range(0.5,2)
+	new_bubble.scale.y = new_bubble.scale.x
 	new_bubble.position.x = randi_range(0,get_viewport().size.x)
 	new_bubble.position.y = get_viewport().size.y
 	add_child(new_bubble)
