@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_u2e7o"]
 radius = 73.00685
 
-[node name="Bubble" type="Node2D" unique_id=513751319]
+[node name="Bubble" type="Area2D" unique_id=784146755]
 script = ExtResource("1_sc4i0")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=587010449]
