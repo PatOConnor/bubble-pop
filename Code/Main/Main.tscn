@@ -1,6 +1,16 @@
 [gd_scene format=3 uid="uid://cd5nxssueqosr"]
 
 [ext_resource type="Script" uid="uid://cycaas4liprst" path="res://Main/Main.gd" id="1_lxy7q"]
+[ext_resource type="PackedScene" uid="uid://c6em00cllt1er" path="res://UI/UI.tscn" id="3_amygn"]
 
 [node name="Main" type="Node" unique_id=1525632278]
 script = ExtResource("1_lxy7q")
+
+[node name="Timer" type="Timer" parent="." unique_id=1887663897]
+autostart = true
+
+[node name="UI" parent="." unique_id=978283715 instance=ExtResource("3_amygn")]
+offset_left = 483.0
+offset_top = 16.0
+offset_right = -516.0
+offset_bottom = -472.0
